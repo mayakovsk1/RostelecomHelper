@@ -34,7 +34,8 @@ def entry_relevance(question):
 
 if __name__ == '__main__':
     while True:
-        message = input()
+        message = input('>>>')
         if message == '0':
             break
         print(entry_relevance(message))
+        print()
