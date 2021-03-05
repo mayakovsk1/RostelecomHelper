@@ -30,11 +30,9 @@ def send_answer(message):
 	answer = entry_relevance(str(message))
 	bot.send_message(message.chat.id, answer)
 	bot.send_message(message.chat.id, '''Пожалуйста введите ваш запрос...''')
-	# print('<<', message, '>>')
-	# print('{{', answer, '}}')
-	# print()
-
-	print(message['chat']['username'])
+	print('<<', message, '>>')
+	print('{{', answer, '}}')
+	print()
 
 
 bot.polling()
