@@ -16,7 +16,7 @@ def entry_relevance(question):
     try:
         #  проверка на соответствие слов
         for i in dictionary_key_words:
-            relevance_check[len(key_words(question) & dictionary_key_words[i])] = i
+            relevance_check[len(set(question.split()) & dictionary_key_words[i])] = i
         relevance_check_value = relevance_check[max(relevance_check)]
 
 
