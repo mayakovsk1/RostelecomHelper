@@ -31,8 +31,8 @@ def send_answer(message):
 	bot.send_message(message.chat.id, answer)
 	bot.send_message(message.chat.id, '''Пожалуйста введите ваш запрос...''')
 	print('<<', message, '>>')
-	for i in message:
-		print(i)
+	print()
+	print(message.chat.username)
 	print()
 	print('{{', answer, '}}')
 	print()
